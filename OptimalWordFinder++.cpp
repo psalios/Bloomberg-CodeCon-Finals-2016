@@ -63,11 +63,7 @@ int main(){
 		cin>>value;
 		table.push_back( make_pair( value, c ) );
 	}
-
-	sort( table.begin(), table.end() );
-
-	bool odd = true;
-	int res = 0, counter = 0, consonants = 0;
+	
 	solve( 0, 0, 0, true );
 	cout<<best<<'\n';
 
